@@ -1,11 +1,12 @@
 //This is a good file to study and understand how to setup and run tests with mocha
 
-var should = require('should'), 
+var should = require('should'),
     fs = require('fs'),
     request = require('request');
 
 /* Globals */
 var listings;
+
 
 /*
   Describe blocks organize your unit tests into distinct categories of functionality.
@@ -39,8 +40,7 @@ describe('UF Directory Server Unit Tests', function() {
           The 'should' module is an assertion library. Assertions allow us to compare the functions
           that we are testing to the values we expect to recieve back. In this block, we expect that the 
           server should respond to a request made. 
-
-          Note in this unit test we are only testing the existence of a response, and are not concerned 
+          Note in this unit test we are only testing the existence of a response, and are not concerned
           with what is contained in the response.
          */
         should.not.exist(error);
